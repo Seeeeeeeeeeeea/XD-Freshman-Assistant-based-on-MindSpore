@@ -1,0 +1,3 @@
+pip install mindspore==2.5.0
+pip install git+https://gitee.com/mindspore-lab/mindnlp.git@0.4 -i https://pypi.tuna.tsinghua.edu.cn/simple 
+pip install gradio
