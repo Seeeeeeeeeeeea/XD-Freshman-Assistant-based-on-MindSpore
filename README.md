@@ -2,6 +2,8 @@
 
 **西电新生百事通** 是一个基于昇思MindSpore框架和Qwen2.5-7B模型开发的人工智能校园政策问答系统，旨在解决西安电子科技大学（西电）师生及校外人员在获取校园政策信息时面临的“信息碎片化、交互不友好、时效性差”等问题。通过对校园政策文档的微调和优化，项目实现了高效、精准的政策查询服务，助力新生快速融入校园，提升校园服务效率。
 
+**该项目提供了一个微调案例模板，类比该代码基础上，你可以基于MindSpore或者其他架构例如Pytorch来实现一个大语言模型针对特定场景的微调**
+
 ---
 
 **团队名称**: Model Evolvers  
@@ -31,19 +33,25 @@ your_project_path
 \---Qwen2.5-7B
 ```
 
+在一切开始之前，你需要确定你微调训练LLM模型的应用场景，并且搜寻获取相应的数据
+
+你可以借鉴`合成数据.ipynb`来借助大模型生成数据
+
 你可以直接使用实现环境配置
 ```bash
 pip install -r requirements.txt
 ```
+
 环境配置好之后，你可以通过下面操作下载Qwen2.5-7B模型
 ```bash
 modelscope download --model Qwen/Qwen2.5-7B --local_dir ./Qwen2.5-7B
 ```
+
 通过运行`train.py来进行训练
-```
 ```bash
 python train.py
 ```
+
 通过运行`inference.py`来实现推理
 ```bash
 python inference.py
