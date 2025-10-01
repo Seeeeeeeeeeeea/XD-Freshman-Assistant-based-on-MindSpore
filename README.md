@@ -24,7 +24,7 @@ your_project_path
 |   train.py
 |   培训.ipynb
 |   推理.ipynb
-|
+|   合成数据.ipynb
 +---yourdata
 |
 +---output/your_weights/
